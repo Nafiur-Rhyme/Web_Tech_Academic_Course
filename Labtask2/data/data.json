@@ -1,0 +1,16 @@
+[
+    {
+        "fname": "tofa",
+        "lname": "hossain",
+        "email": "",
+        "password": "",
+        "age": "23"
+    },
+    {
+        "fname": "nafiur",
+        "lname": "rahman",
+        "email": "rhyme@gmail.com",
+        "password": "rhymepass",
+        "age": "24"
+    }
+]
