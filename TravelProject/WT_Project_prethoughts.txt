@@ -1,0 +1,39 @@
+Welcome page
+	Admin
+		Login
+			Username
+			Password
+				View Profile
+					Update
+				Logout
+		Registration
+			First Name
+			Last Name
+			Username
+			Age
+			Password
+			Email
+	
+	Traveler
+		Login
+			View profile
+				Update
+				Logout
+		Registration
+	
+	Hotels
+		Login
+			View profile
+				Update
+				Logout
+		Registration
+	Transport
+		Login
+			View profile
+				Update
+				Logout
+		Registration
+- validation
+- cookies and sessions
+- Register/Login
+- JSON file read/write
