@@ -9,6 +9,9 @@
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
+                        <th> ADMIN </th>
+                    </tr>
+                    <tr>
                         <td>Employee ID:</td> 
                         <td><input type = 'text' name = 'empID''></td>
                     </tr>
