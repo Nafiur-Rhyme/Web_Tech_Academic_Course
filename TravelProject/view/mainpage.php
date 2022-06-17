@@ -3,7 +3,6 @@
     <head>
         <h1>Welcome</h1>
     </head>
-
     <body>
         <table>
             <tr>
@@ -13,7 +12,7 @@
                 <th><a href="transportation/transportationlogin.php">Transportation</a></th>
             </tr>
             <tr>
-                <td>Contentes</td>
+                <td>Contents</td>
                 <td>About us</td>  
             </tr>
         </table>
