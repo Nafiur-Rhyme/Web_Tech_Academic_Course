@@ -8,18 +8,24 @@
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
-                        <td>Employee ID:</td> 
-                        <td><input type = 'text' name = 'empID'></td>
+                        <td>Your ID is </td> 
+                        
+                    </tr>
+
+                    <tr>
+                        <td>Your user name </td> 
+                    
                     </tr>
                     <tr>
-                        <td>Password:</td>
-                        <td><input type='text' name='password' value =></td>
+                        <td>Your email is </td>
+                    
                     </tr>
+                    
+                    
                     <tr>
                         <td><a href = 'adminregister.php'>update</a></td>
-                        <td><a href = 'adminLogin.php'>Logout</a></td>
+                        <td><a href = 'adminlogin.php'>Logout</a></td>
                         <td><a href = '../mainpage.php'>Homepage</a></td>
-
                     </tr>
                 </table>
             </form>

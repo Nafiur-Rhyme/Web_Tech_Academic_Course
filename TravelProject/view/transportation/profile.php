@@ -8,23 +8,20 @@
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
-                        <td>Company Name:</td> 
-                        <td><input type = 'text' name = 'companyName'></td>
+                        <td>Your Company name is </td> 
+                        
                     </tr>
 
                     <tr>
-                        <td>User Name:</td> 
-                        <td><input type = 'text' name = 'uname'></td>
+                        <td>Your user name </td> 
+                    
                     </tr>
                     <tr>
-                        <td>E-mail:</td>
-                        <td><input type = 'text' name = 'email'></td>
+                        <td>Your email is </td>
+                    
                     </tr>
                     
-                    <tr>
-                        <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></td>
-                        <td><input type = 'reset' name = 'reset' value = 'RESET'></td>
-                    </tr>
+                    
                     <tr>
                         <td><a href = 'transportationregister.php'>update</a></td>
                         <td><a href = 'transportationlogin.php'>Logout</a></td>

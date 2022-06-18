@@ -1,5 +1,5 @@
 <?php
-require ("../../control/admin/adminLoginprocess.php");
+require ("../../control/admincontrol/adminLoginprocess.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,8 +11,8 @@ require ("../../control/admin/adminLoginprocess.php");
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
-                        <td>Employee ID:</td> 
-                        <td><input type = 'text' name = 'empID'></td>
+                        <td>Admin ID:</td> 
+                        <td><input type = 'text' name = 'adminID'></td>
                     </tr>
                     <tr>
                         <td>Password:</td>

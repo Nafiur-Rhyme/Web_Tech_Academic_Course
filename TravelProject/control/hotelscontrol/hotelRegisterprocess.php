@@ -1,41 +1,30 @@
 <?php
 
-    
-    $firstNameError = "";
-    $lastNameError = "";
+
+    $hotelIDError = "";
     $unameError = "";
-    $ageError = "";
     $emailError = "";
     $passwordError = "";
-    $phoneError = "";
 
     if(isset($_POST["submit"]))
     {
-        $firstName = $_REQUEST["firstName"];
-        $lastName = $_REQUEST["lastName"];
-        $uname = $_REQUEST["uname"];
-        $age = $_REQUEST["age"];
+        
+        $hotelID = $_REQUEST["hotelID"];
+        $uname = ["uname"];
         $email = $_REQUEST["email"];
         $password = $_REQUEST["password"];
-        $phone = $_REQUEST["phone"];
+        
 
 
-        if(empty($_REQUEST["firstName"]))
+        
+
+        if(empty($_REQUEST["hotelID"]))
         {
-            $firstNameError = "This fild is required";
+            $hotelIDError = "This fild is required"."<br>";
         }
         else
         {
-            $firstNameError = "Your first name is " . $firstName ."<br>";
-        }
-
-        if(empty($_REQUEST["lastName"]))
-        {
-            $lastNameError = "This fild is required"."<br>";
-        }
-        else
-        {
-            $lastNameError = "Your last name is " . $lastName ."<br>";
+            $hotelIDError = "Your hotel ID is " . $hotelID ."<br>";
         }
 
         if(empty($_REQUEST["uname"]))
@@ -47,14 +36,6 @@
             $unameError = "Your user name is " . $uname ."<br>";
         }
 
-        if(empty($_REQUEST["age"]))
-        {
-            $ageError = "This fild is required";
-        }
-        else
-        {
-            $ageError = "Your age is " . $age ."<br>";
-        }
 
         if(empty($_REQUEST["email"]))
         {
@@ -74,14 +55,7 @@
             $passwordError = "Password Saved" ."<br>";
         }  
 
-        if(empty($_REQUEST["phone"]))
-        {
-            $phoneError = "This fild is required";
-        }
-        else
-        {
-            $phoneError = "Your phone number is " . $phone ."<br>";
-        }
+    
 
         $file = "";
         if(empty($_FILES["myfile"]["name"]))

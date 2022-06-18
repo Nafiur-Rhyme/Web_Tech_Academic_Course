@@ -1,15 +1,20 @@
 <?php
-$empIDError = "";
+$unameError = "";
 $passwordError = "";
+session_start();
 if(isset($_POST["submit"]))
 {
 
-$empID = $_REQUEST["empID"];
-$password = $_REQUEST["password"];
+    $usersData = array();
+    $jsonData= file_get_contents("../../data/adminData.json");
+    $phpData = (array)json_decode($jsonData);
+    
+    $usersData = json_decode(json_encode($phpData), true);
+    print_r($usersData);
 
-if(empty($_REQUEST["empID"]))
+    if(empty($_REQUEST["uname"]))
     {
-        $userNameError = "This fild is required";
+        $unameError = "This fild is required";
     }
     else
     {
@@ -24,8 +29,16 @@ if(empty($_REQUEST["empID"]))
     {
         
     }
-	 
-
+    $id = array_search($_POST["uname"],array_column($usersData,'uname'));
+    $user = $usersData[$id];
+    if($_POST['password'] == $user[$_POST['uname']]['password'])
+    {
+        $_SESSION["adminID"] = $user[$_POST["adminID"]]['uname'];
+        header("Location: profile.php");
+    }
+    else
+    {
+        $passwordError = "username or password incorrect";
+    }
 }
 ?>
-
