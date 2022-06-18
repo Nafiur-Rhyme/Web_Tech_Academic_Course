@@ -1,5 +1,5 @@
 <?php
-require ("../../control/traveler/travelerloginprocess.php");
+require ("../../control/travelercontrol/travelerloginprocess.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,11 +12,11 @@ require ("../../control/traveler/travelerloginprocess.php");
                 <table>
                     <tr>
                         <td>Username:</td> 
-                        <td><input type = 'text' name = 'username'></td>
+                        <td><input type = 'text' name = 'username'><?php echo $userNameError ?></td>
                     </tr>
                     <tr>
                         <td>Password:</td>
-                        <td><input type='text' name='password' value =></td>
+                        <td><input type='text' name='password' value =><?php echo $passwordError ?></td>
                     </tr>
                     <tr>
                         <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></button></td>

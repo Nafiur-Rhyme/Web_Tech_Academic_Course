@@ -1,5 +1,8 @@
 <?php
-require ("../../control/traveler/travelerRegisterprocess.php");
+
+require ("../../control/travelercontrol/travelerRegisterprocess.php");
+require ("../../control/travelercontrol/travelerDataprocess.php");
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,19 +11,21 @@ require ("../../control/traveler/travelerRegisterprocess.php");
     </head>
     <body>
         <table>
-            <form action = '', method = 'POST'>
+            <form action = '', method = 'POST', enctype="multipart/form-data">
                 <table>
                     <tr>
                         <td>First Name:</td> 
-                        <td><input type = 'text' name = 'firstName'></td>
+                        <td><input type = 'text' name = 'firstName'><?php echo $firstNameError; ?></td>
+                        
                     </tr>
                     <tr>
                         <td>Last Name:</td> 
-                        <td><input type = 'text' name = 'lastName'></td>
+                        <td><input type = 'text' name = 'lastName'><?php echo $lastNameError; ?></td>
+                        
                     </tr>
                     <tr>
                         <td>User Name:</td>  
-                        <td><input type = 'text' name = 'uname'></td>
+                        <td><input type = 'text' name = 'uname'><?php echo $unameError; ?></td>
                     </tr>
                     <tr>
                         <td>Age:</td> 
@@ -41,7 +46,7 @@ require ("../../control/traveler/travelerRegisterprocess.php");
                     <tr>
                         <td>Attach your voter id :</td>
                         <td><input type="file"></td>
-                        </tr>
+                    </tr>
                     <tr>
                         <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></td>
                         <td><input type = 'reset' name = 'reset' value = 'RESET'></td>
