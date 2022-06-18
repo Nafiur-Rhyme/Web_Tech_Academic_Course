@@ -24,7 +24,7 @@ else
     echo "Your last name is " . $lastName ."<br>";
 }
 
-if(empty(uname))
+if(empty($uname))
 {
     echo "This fild is required";
 }
