@@ -1,5 +1,5 @@
 <?php
-require ("../../control/transportation/transportationloginprocess.php");
+require ("../../control/transportationcontrol/transportationloginprocess.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,16 +11,16 @@ require ("../../control/transportation/transportationloginprocess.php");
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
-                        <td>Employee ID:</td> 
-                        <td><input type = 'text' name = 'empID'></td>
+                        <td>User Name:</td> 
+                        <td><input type = 'text' name = 'uname'><?php echo $unameError ?></td>
                     </tr>
                     <tr>
                         <td>Password:</td>
-                        <td><input type='text' name='password' value =></td>
+                        <td><input type='text' name='password' value =><?php echo $passwordError ?></td>
                     </tr>
                     <tr>
                         <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></button></td>
-                        <td><a href = 'transportationregister.php'>Not registered yet?</a></td>
+                        <td><a href = 'transportationRegister.php'>Not registered yet?</a></td>
                         <td><a href = '../mainpage.php'>Homepage</a></td>
                     </tr>
                 </table>
