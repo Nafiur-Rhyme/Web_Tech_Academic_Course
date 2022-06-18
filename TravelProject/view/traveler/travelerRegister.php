@@ -29,30 +29,29 @@ require ("../../control/travelercontrol/travelerDataprocess.php");
                     </tr>
                     <tr>
                         <td>Age:</td> 
-                        <td><input type = 'text' name = 'age'></td>
+                        <td><input type = 'text' name = 'age'><?php echo $ageError; ?></td>
                     </tr>
                     <tr>
                         <td>E-mail:</td>
-                        <td><input type = 'text' name = 'email'></td>
+                        <td><input type = 'text' name = 'email'><?php echo $emailError; ?></td>
                     </tr>
                     <tr>
                         <td>Password:</td>
-                        <td><input type='text' name='password' value =></td>
+                        <td><input type='text' name='password' value =><?php echo $passwordError; ?></td>
                     </tr>
                     <tr>
                         <td>Phone Number:</td>
-                        <td><input type='tel' name='phone' value =></td>
+                        <td><input type='tel' name='phone' value =><?php echo $phoneError; ?></td>
                     </tr>
                     <tr>
                         <td>Attach your voter id :</td>
-                        <td><input type="file"></td>
+                        <td><input type="file"><?php echo $fileError; ?></td>
                     </tr>
                     <tr>
                         <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></td>
                         <td><input type = 'reset' name = 'reset' value = 'RESET'></td>
                     </tr>
                     <tr>
-                        <td><a href="travelerlogin.php">Back</a></td>
                         <td><a href = 'travelerlogin.php'>Existing User? Login</a></td>
                         <td><a href = '../mainpage.php'>Homepage</a></td>
                     </tr>

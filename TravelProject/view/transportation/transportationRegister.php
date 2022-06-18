@@ -39,7 +39,6 @@ require ("../../control/transportation/transportationRegisterprocess.php");
                         <td><input type = 'reset' name = 'reset' value = 'RESET'></td>
                     </tr>
                     <tr>
-                        <td><a href="transportationlogin.php">Back</a></td>
                         <td><a href = 'transportationlogin.php'>Existing User? Login</a></td>
                         <td><a href = '../mainpage.php'>Homepage</a></td>
                     </tr>

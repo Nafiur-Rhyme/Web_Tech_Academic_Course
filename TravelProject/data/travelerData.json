@@ -1,0 +1,38 @@
+[
+    {
+        "rhyme": {
+            "firstName": "Nafiur",
+            "lastName": "Rahman",
+            "uname": "rhyme",
+            "age": "23",
+            "email": "2000.rhyme@gmail.com",
+            "password": "passforproject",
+            "phone": "+8801750996097",
+            "0": "file"
+        }
+    },
+    {
+        "moon": {
+            "firstName": "tofa",
+            "lastName": "hossain",
+            "uname": "moon",
+            "age": "23",
+            "email": "tofa@gmail.com",
+            "password": "moontrovert",
+            "phone": "1234567",
+            "0": "file"
+        }
+    },
+    {
+        "ratul": {
+            "firstName": "Navid",
+            "lastName": "Rahman",
+            "uname": "ratul",
+            "age": "34",
+            "email": "ratul@gmail.com",
+            "password": "pass4ratul",
+            "phone": "1234567",
+            "0": "file"
+        }
+    }
+]
