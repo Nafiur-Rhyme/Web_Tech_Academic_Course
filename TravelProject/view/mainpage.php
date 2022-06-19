@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>Welcome</h1>
+        <h1>Welcome to One Stop Tour</h1>
     </head>
     <body>
         <table>
