@@ -44,8 +44,8 @@ require ("../../control/travelercontrol/travelerDataprocess.php");
                         <td><input type='tel' name='phone' value =><?php echo $phoneError; ?></td>
                     </tr>
                     <tr>
-                        <td>Attach your voter id :</td>
-                        <td><input type="file"><?php echo $fileError; ?></td>
+                        <td>NID Card :</td>
+                        <td><input type="file" name='myfile'><?php echo $fileError;?></td>
                     </tr>
                     <tr>
                         <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></td>

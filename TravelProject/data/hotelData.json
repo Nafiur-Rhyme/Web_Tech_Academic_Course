@@ -1,18 +1,11 @@
 [
     {
-        "moontrovert": {
-            "hotelID": "moontrovert",
-            "uname": "moontrovert",
-            "email": "tofa.hossainmoon@yahoo.com",
-            "password": "123456"
-        }
-    },
-    {
-        "moontrovert": {
-            "hotelID": "moontrovert",
-            "uname": "moontrovert",
-            "email": "tofa.hossainmoon@yahoo.com",
-            "password": "123456"
+        "moon": {
+            "hotelID": "121",
+            "uname": "moon",
+            "email": "tofa@gmail.com",
+            "password": "123456",
+            "rooms": "4"
         }
     }
 ]

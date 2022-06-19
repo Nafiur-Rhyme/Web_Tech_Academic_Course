@@ -1,3 +1,10 @@
+<?php
+//session_start();
+require ("../../control/travelercontrol/startTripprocess.php");
+require('../../control/userControler.php');
+
+$user = get_traveler_by_username($_SESSION["username"]);
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,28 +15,20 @@
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
-                        <td>First Name:</td> 
-                        <td><input type = 'text' name = 'firstName'></td>
+                        <td>First Name:</td>
+                        <td><?php echo $user[$_SESSION["username"]]['firstName'] ?></td> 
                     </tr>
                     <tr>
                         <td>Last Name:</td> 
-                        <td><input type = 'text' name = 'lastName'></td>
-                    </tr>
-                    <tr>
-                        <td>Employee ID:</td>
-                        <td><input type = 'text' name = 'empID'></td>
+                        <td><?php echo $user[$_SESSION["username"]]['lastName'] ?></td>
                     </tr>
                     <tr>
                         <td>E-mail:</td>
-                        <td><input type = 'text' name = 'email'></td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                        <td><input type='text' name='password' value =></td>
+                        <td><?php echo $user[$_SESSION["username"]]['email'] ?></td>
                     </tr>
                     <tr>
                         <td><a href = 'travlerregister.php'>update</a></td>
-                        <td><a href = 'travelerlogin.php'>Logout</a></td>
+                        <td><a href = "../../control/travelercontrol/travelerLogoutprocess.php">Logout</a></td>
                         <td><a href = '../mainpage.php'>Homepage</a></td>
                     </tr>
                 </table>

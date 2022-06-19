@@ -13,7 +13,7 @@
             </tr>
             <tr>
                 <td>Contents</td>
-                <td>About us</td>  
+                <td><a href="gitinfo.php">About us</a></td>  
             </tr>
         </table>
     </body>

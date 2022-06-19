@@ -17,7 +17,7 @@ require ("../../control/hotelscontrol/hotelDataprocess.php");
                     </tr>
                     <tr>
                         <td>User Name: </td> 
-                        <td><input type = 'text' name = 'uname'><?php echo $unameIDError;?></td>
+                        <td><input type = 'text' name = 'uname'><?php echo $unameError;?></td>
                     </tr>
                     <tr>
                         <td>E-mail:</td>

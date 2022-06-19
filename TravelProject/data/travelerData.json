@@ -8,31 +8,33 @@
             "email": "2000.rhyme@gmail.com",
             "password": "passforproject",
             "phone": "+8801750996097",
-            "0": "file"
+            "file": {
+                "name": "Random file.txt",
+                "full_path": "Random file.txt",
+                "type": "text\/plain",
+                "tmp_name": "C:\\xampp\\tmp\\php409D.tmp",
+                "error": 0,
+                "size": 6
+            }
         }
     },
     {
-        "moon": {
-            "firstName": "tofa",
-            "lastName": "hossain",
-            "uname": "moon",
-            "age": "23",
-            "email": "tofa@gmail.com",
-            "password": "moontrovert",
-            "phone": "1234567",
-            "0": "file"
-        }
-    },
-    {
-        "ratul": {
-            "firstName": "Navid",
-            "lastName": "Rahman",
-            "uname": "ratul",
-            "age": "34",
-            "email": "ratul@gmail.com",
-            "password": "pass4ratul",
-            "phone": "1234567",
-            "0": "file"
+        "": {
+            "firstName": "",
+            "lastName": "",
+            "uname": "",
+            "age": "",
+            "email": "",
+            "password": "",
+            "phone": "",
+            "file": {
+                "name": "",
+                "full_path": "",
+                "type": "",
+                "tmp_name": "",
+                "error": 4,
+                "size": 0
+            }
         }
     }
 ]

@@ -1,7 +1,12 @@
+<?php
+session_start();
+require('../../control/userControler.php');
+$user = get_hotel_by_username($_SESSION["uname"]);
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>Your Profile</h1>
+        <h1>Hotel Profile</h1>
     </head>
     <body>
         <table>
@@ -9,23 +14,22 @@
                 <table>
                     <tr>
                         <td>Hotel ID:</td> 
-                        
                     </tr>
 
                     <tr>
-                        <td>Your user name </td> 
+                        <td>Your user name: </td> 
                     
                     </tr>
                     
                     <tr>
-                        <td>E-mail:</td>
+                        <td>E-mail: </td>
                         
                     </tr>
-                        <td>Room number:</td>
+                        <td>Room number: </td>
                     
                     <tr>
                     <td><a href = 'hotelregister.php'>update</a></td>
-                        <td><a href = 'hotellogin.php'>Logout</a></td>
+                        <td><a href = '../../control/hotelprocess/hotellogutprocess.php'>Logout</a></td>
                         <td><a href = '../mainpage.php'>Homepage</a></td>
                     </tr>
                 </table>

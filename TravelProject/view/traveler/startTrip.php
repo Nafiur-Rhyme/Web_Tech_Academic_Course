@@ -10,7 +10,7 @@ require ("../../control/travelercontrol/startTripprocess.php");
     <table>
         <tr>
             <td><a href="tripdetails.php">START A TRIP</a></td>
-            <td><a href="profile.php">Account</a></td>
+            <td><a href="travelerProfile.php">Account</a></td>
             <td><a href="../../control/travelercontrol/travelerLogoutprocess.php">Logout</a></td>
             <td><a href = '../mainpage.php'>Homepage</a></td>  
         </tr>

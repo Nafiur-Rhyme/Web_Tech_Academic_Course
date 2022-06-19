@@ -2,19 +2,46 @@
     {
         "101": {
             "adminID": "101",
-            "uname": "sabiha",
-            "email": "ohi@gmail.com",
-            "password": "123456",
-            "phone": "123456789"
+            "uname": "rhyme",
+            "email": "2000.rhyme@gmail.com",
+            "password": "11223344",
+            "phone": "+8801750996097"
         }
     },
     {
         "102": {
             "adminID": "102",
-            "uname": "ritu",
-            "email": "ritu@gmail.com",
+            "uname": "abc",
+            "email": "abc@gmail.com",
             "password": "123456",
-            "phone": "123456789"
+            "phone": "1234567"
+        }
+    },
+    {
+        "": {
+            "adminID": "",
+            "uname": "",
+            "email": "",
+            "password": "",
+            "phone": ""
+        }
+    },
+    {
+        "": {
+            "adminID": "",
+            "uname": "",
+            "email": "",
+            "password": "",
+            "phone": ""
+        }
+    },
+    {
+        "": {
+            "adminID": "",
+            "uname": "",
+            "email": "",
+            "password": "",
+            "phone": ""
         }
     }
 ]

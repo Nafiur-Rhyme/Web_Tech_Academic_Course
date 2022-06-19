@@ -63,22 +63,6 @@
             $phoneError = "Your phone number is " . $phone ."<br>";
         }
 
-        $file = "";
-        if(empty($_FILES["myfile"]["name"]))
-        {
-            $fileError= "No file attached";
-        }    
-        else
-        {
-            if(move_uploaded_file($_FILES['myfile']['tmp_name'], "../upload/".$_FILES["myfile"]["name"])) 
-            {  
-                $file = "../Projects/".$_FILES["myfile"]["name"]; 
-            } 
-            else
-            {  
-                echo "Sorry, file not uploaded, please try again!" . "<br>";  
-            }
-        }
         
     }
 ?>

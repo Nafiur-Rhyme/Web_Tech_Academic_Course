@@ -1,6 +1,5 @@
 <?php
 require ("../../control/admincontrol/adminLoginprocess.php");
-require ("../../control/admincontrol/adminLogout");
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,11 +12,11 @@ require ("../../control/admincontrol/adminLogout");
                 <table>
                     <tr>
                         <td>Admin ID:</td> 
-                        <td><input type = 'text' name = 'adminID'></td>
+                        <td><input type = 'text' name = 'adminID'><?php echo $adminIDError?></td>
                     </tr>
                     <tr>
                         <td>Password:</td>
-                        <td><input type='text' name='password' value =></td>
+                        <td><input type='text' name='password' value =><?php echo $passwordError?></td>
                     </tr>
                     <tr>
                         <td><input type = 'submit' name = 'submit' value = 'Submit'></td>
