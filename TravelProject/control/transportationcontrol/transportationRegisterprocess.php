@@ -15,17 +15,14 @@
         $password = $_REQUEST["password"];
         $phone = $_REQUEST["phone"];
 
-<<<<<<< HEAD
-if(empty($uname))
-{
-    echo "This fild is required";
-}
-else
-{
-    echo "Your user name is " . $uname ."<br>";
-}
-=======
->>>>>>> 71c5894148534991f19aaf780824b062bf70c4f2
+        if(empty($uname))
+        {
+            $unameError = "This fild is required";
+        }
+        else
+        {
+            $unameError = "Your user name is " . $uname ."<br>";
+        }
 
         if(empty($_REQUEST["companyName"]))
         {
