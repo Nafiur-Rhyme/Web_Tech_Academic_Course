@@ -16,7 +16,7 @@ require ("../../control/transportationcontrol/transportationloginprocess.php");
                     </tr>
                     <tr>
                         <td>Password:</td>
-                        <td><input type='text' name='password' value =><?php echo $passwordError ?></td>
+                        <td><input type='password' name='password' value =><?php echo $passwordError ?></td>
                     </tr>
                     <tr>
                         <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></button></td>
