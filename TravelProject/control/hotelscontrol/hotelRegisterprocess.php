@@ -1,39 +1,31 @@
 <?php
 
-    
-    $companyNameError = "";
+
+    $hotelIDError = "";
     $unameError = "";
     $emailError = "";
     $passwordError = "";
-    $phoneError = "";
 
     if(isset($_POST["submit"]))
     {
-        $companyName = $_REQUEST["companyName"];
-        $uname = $_REQUEST["uname"];
+        
+        $hotelID = $_REQUEST["hotelID"];
+        $uname = ["uname"];
         $email = $_REQUEST["email"];
         $password = $_REQUEST["password"];
-        $phone = $_REQUEST["phone"];
+        
 
-        if(empty($uname))
+
+        
+
+        if(empty($_REQUEST["hotelID"]))
         {
-            $unameError = "This fild is required";
+            $hotelIDError = "This fild is required"."<br>";
         }
         else
         {
-            $unameError = "Your user name is " . $uname ."<br>";
+            $hotelIDError = "Your hotel ID is " . $hotelID ."<br>";
         }
-
-        if(empty($_REQUEST["companyName"]))
-        {
-            $CompanyNameError = "This fild is required";
-        }
-        else
-        {
-            $CompanyNameError = "Your company name is " . $companyName ."<br>";
-        }
-
-    
 
         if(empty($_REQUEST["uname"]))
         {
@@ -43,6 +35,7 @@
         {
             $unameError = "Your user name is " . $uname ."<br>";
         }
+
 
         if(empty($_REQUEST["email"]))
         {
@@ -62,14 +55,7 @@
             $passwordError = "Password Saved" ."<br>";
         }  
 
-        if(empty($_REQUEST["phone"]))
-        {
-            $phoneError = "This fild is required";
-        }
-        else
-        {
-            $phoneError = "Your phone number is " . $phone ."<br>";
-        }
+    
 
         $file = "";
         if(empty($_FILES["myfile"]["name"]))

@@ -1,5 +1,6 @@
 <?php
-require ("../../control/hotels/hotelRegisterprocess.php");
+require ("../../control/hotelscontrol/hotelRegisterprocess.php");
+require ("../../control/hotelscontrol/hotelDataprocess.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,8 +12,12 @@ require ("../../control/hotels/hotelRegisterprocess.php");
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
-                        <td>Company Name: </td> 
-                        <td><input type = 'text' name = 'companyName'></td>
+                        <td>Hotel ID </td> 
+                        <td><input type = 'text' name = 'hotelID'></td>
+                    </tr>
+                    <tr>
+                        <td>User Name: </td> 
+                        <td><input type = 'text' name = 'uname'></td>
                     </tr>
                     <tr>
                         <td>E-mail:</td>
