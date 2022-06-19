@@ -1,5 +1,6 @@
 <?php
 require ("../../control/admincontrol/adminLoginprocess.php");
+require ("../../control/admincontrol/adminLogout");
 ?>
 <!DOCTYPE html>
 <html>

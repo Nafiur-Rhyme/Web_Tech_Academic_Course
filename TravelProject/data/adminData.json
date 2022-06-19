@@ -1,0 +1,20 @@
+[
+    {
+        "101": {
+            "adminID": "101",
+            "uname": "sabiha",
+            "email": "ohi@gmail.com",
+            "password": "123456",
+            "phone": "123456789"
+        }
+    },
+    {
+        "102": {
+            "adminID": "102",
+            "uname": "ritu",
+            "email": "ritu@gmail.com",
+            "password": "123456",
+            "phone": "123456789"
+        }
+    }
+]

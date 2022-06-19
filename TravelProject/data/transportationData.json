@@ -34,5 +34,23 @@
             "password": "123457",
             "phone": "01712767789"
         }
+    },
+    {
+        "Sabiha Ohi": {
+            "adminID": null,
+            "uname": "Sabiha Ohi",
+            "email": "ohi@gmail.com",
+            "password": "123456",
+            "phone": "01234567891"
+        }
+    },
+    {
+        "moon": {
+            "adminID": null,
+            "uname": "moon",
+            "email": "moon@gmail.com",
+            "password": "123456",
+            "phone": "01202020202"
+        }
     }
 ]

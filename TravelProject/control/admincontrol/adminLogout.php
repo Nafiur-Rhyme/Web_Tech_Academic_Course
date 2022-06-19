@@ -2,5 +2,5 @@
 
 session_start();
 session_destroy();
-header("Location: ../../view/transportation/adminlogin.php");
+header("Location: ../../view/admin/adminlogin.php");
 ?>

@@ -13,7 +13,7 @@ require ("../../control/admincontrol/adminDataprocess.php");
                 <table>
                     <tr>
                         <td>Admin ID: </td> 
-                        <td><input type = 'text' name = 'companyName'></td>
+                        <td><input type = 'text' name = 'adminID'></td>
                     </tr>
                     <tr>
                         <td>User Name: </td> 

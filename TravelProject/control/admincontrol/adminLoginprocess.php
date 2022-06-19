@@ -12,7 +12,7 @@ if(isset($_POST["submit"]))
     $usersData = json_decode(json_encode($phpData), true);
     print_r($usersData);
 
-    if(empty($_REQUEST["uname"]))
+    if(empty($_REQUEST["adminID"]))
     {
         $unameError = "This fild is required";
     }
@@ -29,11 +29,14 @@ if(isset($_POST["submit"]))
     {
         
     }
-    $id = array_search($_POST["uname"],array_column($usersData,'uname'));
+    $id = array_search($_POST["adminID"],array_column($usersData,'adminID'));
     $user = $usersData[$id];
-    if($_POST['password'] == $user[$_POST['uname']]['password'])
+    if($_POST['password'] == $user[$_POST['adminID']]['password'])
     {
-        $_SESSION["adminID"] = $user[$_POST["adminID"]]['uname'];
+        $_SESSION["adminID"] = $user[$_POST["adminID"]]['adminID'];
+        $_SESSION["uname"] = $user[$_POST["adminID"]]['uname'];
+        $_SESSION["email"] = $user[$_POST["adminID"]]["email"];
+        
         header("Location: profile.php");
     }
     else

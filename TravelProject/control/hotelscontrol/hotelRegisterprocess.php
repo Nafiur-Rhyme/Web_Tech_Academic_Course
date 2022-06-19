@@ -10,7 +10,7 @@
     {
         
         $hotelID = $_REQUEST["hotelID"];
-        $uname = ["uname"];
+        $uname = $_REQUEST["uname"];
         $email = $_REQUEST["email"];
         $password = $_REQUEST["password"];
         
