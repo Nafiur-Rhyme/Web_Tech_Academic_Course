@@ -7,7 +7,7 @@ if(isset($_POST["submit"]))
         'uname' => $_POST["uname"],
         'email' => $_POST["email"],
         'password' => $_POST["password"],
-        
+        'rooms' => $_POST["rooms"],
     );
     $user = array(
         $_POST["uname"] => $formdata

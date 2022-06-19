@@ -21,7 +21,7 @@
                         <td>E-mail:</td>
                         
                     </tr>
-                    
+                        <td>Room number:</td>
                     
                     <tr>
                     <td><a href = 'hotelregister.php'>update</a></td>

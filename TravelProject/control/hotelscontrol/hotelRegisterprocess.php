@@ -4,7 +4,9 @@
     $hotelIDError = "";
     $unameError = "";
     $emailError = "";
+    $phoneError = "";
     $passwordError = "";
+    $roomError = "";
 
     if(isset($_POST["submit"]))
     {
@@ -22,18 +24,10 @@
         {
             $hotelIDError = "This fild is required"."<br>";
         }
-        else
-        {
-            $hotelIDError = "Your hotel ID is " . $hotelID ."<br>";
-        }
 
         if(empty($_REQUEST["uname"]))
         {
             $unameError = "This fild is required"."<br>";
-        }
-        else
-        {
-            $unameError = "Your user name is " . $uname ."<br>";
         }
 
 
@@ -41,19 +35,18 @@
         {
             $emailError = "Email should not be empty"."<br>";
         }
-        else
+
+        if(empty($_REQUEST['rooms']))
         {
-            $emailError = "Email is " . $email."<br>";
+            $roomError = "This field is required"."<br>";
         }
 
         if(strlen($_REQUEST["password"]) <6)
         {
             $passwordError = "Password should be more than 6 characters" ."<br>";
-        }
-        else
-        {
-            $passwordError = "Password Saved" ."<br>";
-        }  
+        } 
+
+
 
     
 
