@@ -1,5 +1,6 @@
 <?php
 require ("../../control/transportationcontrol/transportationRegisterprocess.php");
+require ("../../control/transportationcontrol/transportationDataprocess.php");
 ?>
 <!DOCTYPE html>
 <html>

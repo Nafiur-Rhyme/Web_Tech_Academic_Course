@@ -1,75 +1,54 @@
 <?php
 
-    
-    $companyNameError = "";
+
+    $hotelIDError = "";
     $unameError = "";
     $emailError = "";
-    $passwordError = "";
     $phoneError = "";
+    $passwordError = "";
+    $roomError = "";
 
     if(isset($_POST["submit"]))
     {
-        $companyName = $_REQUEST["companyName"];
+        
+        $hotelID = $_REQUEST["hotelID"];
         $uname = $_REQUEST["uname"];
         $email = $_REQUEST["email"];
         $password = $_REQUEST["password"];
-        $phone = $_REQUEST["phone"];
+        
 
-        if(empty($uname))
-        {
-            $unameError = "This fild is required";
-        }
-        else
-        {
-            $unameError = "Your user name is " . $uname ."<br>";
-        }
 
-        if(empty($_REQUEST["companyName"]))
-        {
-            $CompanyNameError = "This fild is required";
-        }
-        else
-        {
-            $CompanyNameError = "Your company name is " . $companyName ."<br>";
-        }
+        
 
-    
+        if(empty($_REQUEST["hotelID"]))
+        {
+            $hotelIDError = "This fild is required"."<br>";
+        }
 
         if(empty($_REQUEST["uname"]))
         {
             $unameError = "This fild is required"."<br>";
         }
-        else
-        {
-            $unameError = "Your user name is " . $uname ."<br>";
-        }
+
 
         if(empty($_REQUEST["email"]))
         {
             $emailError = "Email should not be empty"."<br>";
         }
-        else
+
+        if(empty($_REQUEST['rooms']))
         {
-            $emailError = "Email is " . $email."<br>";
+            $roomError = "This field is required"."<br>";
         }
 
         if(strlen($_REQUEST["password"]) <6)
         {
             $passwordError = "Password should be more than 6 characters" ."<br>";
-        }
-        else
-        {
-            $passwordError = "Password Saved" ."<br>";
-        }  
+        } 
 
-        if(empty($_REQUEST["phone"]))
-        {
-            $phoneError = "This fild is required";
-        }
-        else
-        {
-            $phoneError = "Your phone number is " . $phone ."<br>";
-        }
+
+
+    
 
         $file = "";
         if(empty($_FILES["myfile"]["name"]))

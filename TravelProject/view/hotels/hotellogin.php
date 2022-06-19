@@ -1,3 +1,6 @@
+<?php
+require ("../../control/hotelscontrol/hotelloginprocess.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,8 +12,8 @@
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
-                        <td>Hotel ID:</td> 
-                        <td><input type = 'text' name = 'hotelID''></td>
+                        <td>User Name:</td> 
+                        <td><input type = 'text' name = 'uname'><?php echo $unameError ?></td>
                     </tr>
                     <tr>
                         <td>Password:</td>
@@ -18,7 +21,7 @@
                     </tr>
                     <tr>
                         <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></button></td>
-                        <td><a href = 'adminregister.php'>Not registered yet?</a></td>
+                        <td><a href = 'hotelregister.php'>Not registered yet?</a></td>
                         <td><a href = '../mainpage.php'>Homepage</a></td>
                     </tr>
                 </table>

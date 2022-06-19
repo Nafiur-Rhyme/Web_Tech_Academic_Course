@@ -80,7 +80,7 @@
         }
         else
         {
-            $phoneError = "Your user name is " . $phone ."<br>";
+            $phoneError = "Your phone number is " . $phone ."<br>";
         }
 
         $file = "";

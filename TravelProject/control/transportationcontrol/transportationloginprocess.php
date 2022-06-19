@@ -33,7 +33,10 @@ if(isset($_POST["submit"]))
     $user = $usersData[$id];
     if($_POST['password'] == $user[$_POST['uname']]['password'])
     {
-        $_SESSION["companyName"] = $user[$_POST["companyName"]]['uname'];
+        $_SESSION["uname"] = $user[$_POST["uname"]]['uname'];
+        $_SESSION["companyName"] = $user[$_POST["uname"]]['companyName'];
+        $_SESSION["email"] = $user[$_POST["uname"]]['email'];
+        $_SESSION["phone"] = $user[$_POST["uname"]]['phone'];
         header("Location: profile.php");
     }
     else

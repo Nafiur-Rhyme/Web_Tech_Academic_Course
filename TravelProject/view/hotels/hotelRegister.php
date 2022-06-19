@@ -1,5 +1,6 @@
 <?php
-require ("../../control/hotels/hotelRegisterprocess.php");
+require ("../../control/hotelscontrol/hotelRegisterprocess.php");
+require ("../../control/hotelscontrol/hotelDataprocess.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,24 +12,28 @@ require ("../../control/hotels/hotelRegisterprocess.php");
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
-                        <td>Company Name: </td> 
-                        <td><input type = 'text' name = 'companyName'></td>
+                        <td>Hotel ID </td> 
+                        <td><input type = 'text' name = 'hotelID'><?php echo $hotelIDError;?></td>
+                    </tr>
+                    <tr>
+                        <td>User Name: </td> 
+                        <td><input type = 'text' name = 'uname'><?php echo $unameIDError;?></td>
                     </tr>
                     <tr>
                         <td>E-mail:</td>
-                        <td><input type = 'text' name = 'email'></td>
+                        <td><input type = 'text' name = 'email'><?php echo $emailError;?></td>
                     </tr>
                     <tr>
                         <td>Phone:</td>
-                        <td><input type = 'tel' name = 'phone'></td>
+                        <td><input type = 'tel' name = 'phone'><?php echo $phoneError;?></td>
                     </tr>
                     <tr>
                         <td>Password:</td>
-                        <td><input type='password' name='password' value =></td>
+                        <td><input type='password' name='password' value =><?php echo $passwordError;?></td>
                     </tr>
                     <tr>
                         <td>Number of rooms:</td>
-                        <td><input type = 'text' name = 'room'></td>
+                        <td><input type = 'text' name = 'rooms'></td>
                     </tr>
                     <tr>
                         <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></td>

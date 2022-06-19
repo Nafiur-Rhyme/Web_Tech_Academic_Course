@@ -8,19 +8,21 @@
             <form action = '', method = 'POST'>
                 <table>
                     <tr>
-                        <td>Company Name:</td> 
-                        <td><input type = 'text' name = 'companyName'></td>
+                        <td>Hotel ID:</td> 
+                        
+                    </tr>
+
+                    <tr>
+                        <td>Your user name </td> 
+                    
                     </tr>
                     
                     <tr>
                         <td>E-mail:</td>
-                        <td><input type = 'text' name = 'email'></td>
+                        
                     </tr>
+                        <td>Room number:</td>
                     
-                    <tr>
-                        <td><input type = 'submit' name = 'submit' value = 'SUBMIT'></td>
-                        <td><input type = 'reset' name = 'reset' value = 'RESET'></td>
-                    </tr>
                     <tr>
                     <td><a href = 'hotelregister.php'>update</a></td>
                         <td><a href = 'hotellogin.php'>Logout</a></td>
