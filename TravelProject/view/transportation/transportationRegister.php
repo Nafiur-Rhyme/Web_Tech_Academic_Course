@@ -8,7 +8,7 @@ require ("../../control/transportationcontrol/transportationRegisterprocess.php"
     </head>
     <body>
         <table>
-            <form action = '', method = 'POST'>
+            <form action = '', method = 'POST', enctype="multipart/form-data">
                 <table>
                     <tr>
                         <td>Company Name: </td> 
